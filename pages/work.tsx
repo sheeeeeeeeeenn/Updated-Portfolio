@@ -7,12 +7,12 @@ import ContentPane from "../src/components/pages/work/ContentPane";
 import NavigationPane from "../src/components/pages/work/NavigationPane";
 import { getRoute } from "../src/misc/routes";
 
-export default function Work(): JSX.Element {
+export default function Work() {
   const { asPath } = useRouter();
   const [activeItem, setActiveItem] = useState<string>();
 
   return (
-    <Window title={getRoute(asPath)?.title}>
+    <Window title={getRoute(asPath)?.title || 'Work'}>
       <Flex sx={{ height: "100%", flexDirection: ["column", null, "row"] }}>
         <NavigationPane title={activeItem} onNavigate={(item) => setActiveItem(item)} />
         <ContentPane title={activeItem} />

@@ -1,18 +1,7 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended"
-  ],
+  "extends": "next/core-web-vitals",
   "rules": {
-    // Custom rules here
-    "react/no-unknown-property": [
-      "error",
-      {
-        "ignore": [
-          "sx"
-        ]
-      }
-    ]
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
