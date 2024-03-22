@@ -23,5 +23,13 @@ export const translate = (val: string | number) => ({ x: val, y: val });
 
 export const format = (datetimeString: string) => {
   const datetime = new Date(datetimeString);
+
+  // Check if 'datetime' is an invalid date
+  if (isNaN(datetime.getTime())) {
+    // Return a fallback value or indicate invalid date
+    return 'Invalid date';
+  }
+
   return new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(datetime);
 };
+

@@ -13,9 +13,7 @@ import LogoLuckydraw from "./logo-luckydraw.webp";
 import LogoWin7 from "./logo-win7.webp";
 import Logoandroidstd from "./skill-androidstd.svg";
 import Logobalsamiq from "./skill-balsamiq.svg";
-import Logobitbucket from "./skill-bitbucket.svg";
 import Logobootstrap from "./skill-bootstrap.svg";
-import Logocrowdin from "./skill-crowdin.svg";
 import Logocss from "./skill-css.svg";
 import Logoeclipse from "./skill-eclipse.svg";
 import Logofigma from "./skill-figma.svg";
@@ -23,7 +21,6 @@ import Logofirebase from "./skill-firebase.svg";
 import Logoframer from "./skill-framer.svg";
 import Logogit from "./skill-git.svg";
 import Logogithub from "./skill-github.svg";
-import Logogql from "./skill-gql.svg";
 import Logohtml from "./skill-html.svg";
 import Logojira from "./skill-jira.svg";
 import Logojquery from "./skill-jquery.svg";
@@ -34,14 +31,23 @@ import Logooffice from "./skill-office.svg";
 import Logophotoshop from "./skill-photoshop.svg";
 import Logoreactjs from "./skill-reactjs.svg";
 import Logosass from "./skill-sass.svg";
-import Logostrapi from "./skill-strapi.svg";
-import Logosvelte from "./skill-svelte.svg";
 import Logots from "./skill-ts.svg";
 import Logovs from "./skill-vs.svg";
 import Logovscode from "./skill-vscode.svg";
 import Logovuejs from "./skill-vuejs.svg";
-import Logovuepress from "./skill-vuepress.png";
 import Logobulma from "./skill-bulma.svg";
+import Logoexpo from "./skill-expo.svg";
+import Logocockroachdb from "./skill-cockroachdb.svg";
+import Logopostgresql from "./skill-postgresql.svg";
+import Logostripe from "./skill-stripe.svg";
+import Logotailwindcss from "./skill-tailwind.svg";
+import Logomongodb from "./skill-mongoDb.svg";
+import Logomysql from "./skill-mysql.svg";
+import Logosupabase from "./skill-supabase.svg";
+import Logocloudinary from "./skill-cloudinary.svg";
+import Logoclerk from "./skill-clerk.svg";
+import Logoreactnative from "./skill-reactnative.svg";
+
 
 const Icon = {
   FlatAbout,
@@ -63,7 +69,6 @@ const Icon = {
   Logocss,
   Logoeclipse,
   Logoframer,
-  Logogql,
   Logohtml,
   Logojquery,
   Logojs,
@@ -76,18 +81,24 @@ const Icon = {
   Logovs,
   Logovscode,
   Logovuejs,
-  Logobitbucket,
-  Logocrowdin,
   Logofigma,
   Logojira,
   Logofirebase,
   Logogit,
   Logogithub,
   Logonodejs,
-  Logostrapi,
-  Logosvelte,
-  Logovuepress,
   Logobulma,
+  Logoexpo,
+  Logocockroachdb,
+  Logopostgresql,
+  Logostripe,
+  Logotailwindcss,
+  Logomongodb,
+  Logomysql,
+  Logosupabase,
+  Logocloudinary,
+  Logoclerk,
+  Logoreactnative,
 };
 
 export default Icon;

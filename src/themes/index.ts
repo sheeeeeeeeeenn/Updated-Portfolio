@@ -16,7 +16,7 @@ const theme: Theme = {
     background: "#f2f3f5",
     primary: "#2c3e50",
     secondary: "#1abc9c",
-    highlight: "#1abc9c",
+    highlight: "#ffffff",
     shadow: undefined,
     text: "#2c3e50",
     textReverse: "#fff",

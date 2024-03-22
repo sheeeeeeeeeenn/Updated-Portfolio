@@ -92,7 +92,10 @@ export default function Taskbar() {
           <MotionSection key="taskbar" sx={taskbarStyle} {...fadeInUp}>
             {_ButtonConfig}
             <AnimatePresence exitBeforeEnter>{route && <TaskbarItem key={route.title} data={route} />}</AnimatePresence>
-            <div sx={{ ml: "auto", color: "mutedReverse" }}>Crafted with ❤ in 2022</div>
+              <div sx={{ ml: "auto", color: "mutedReverse" }}>
+                Shenmar Bonifacio BSCS | 2024
+              </div>
+
           </MotionSection>
         )}
       </AnimatePresence>

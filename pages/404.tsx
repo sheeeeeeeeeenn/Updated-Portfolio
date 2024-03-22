@@ -18,7 +18,7 @@ export default function NotFound() {
         <p sx={{ fontSize: [20, null, 24], mb: 6 }}>404: Page Not Found</p>
         <p sx={{ lineHeight: 1.6 }}>
           If the error info above is strange to you somehow, you may raise an issue at
-          https://github.com/khang-nd/khang-nd.github.io/issues
+          https://github.com/sheeeeeeeeeenn
         </p>
       </div>
     </div>

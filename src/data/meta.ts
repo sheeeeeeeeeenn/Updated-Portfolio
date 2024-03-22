@@ -6,10 +6,10 @@ type MetaData = {
 };
 
 const meta: MetaData = {
-  title: "Khang Nguyen Duy | Winport",
-  description: "A window-styled portfolio of Khang Nguyen Duy. Inspired by Microsoft's Windows.",
-  keywords: "Khang Nguyen Duy,khangnd,Winport,Window-styled portfolio,Multi-theming portfolio",
-  image: "https://raw.githubusercontent.com/khang-nd/khang-nd.github.io/main/public/images/theme-flat.png",
+  title: "Shenmar",
+  description: "A window-styled portfolio.",
+  keywords: "Updated Website Portfolio",
+  image: "https://res.cloudinary.com/dp9lawgua/image/upload/v1710868183/kqcd23jmprfjbdmhr2mz.jpg",
 };
 
 export default meta;

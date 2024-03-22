@@ -6,11 +6,12 @@ import { List, MotionList } from "../Container";
 import SocialLink, { SocialLinkType } from "./Link";
 
 const links: SocialLinkType[] = [
-  { text: "Github", icon: "SiGithub", href: "https://github.com/khang-nd" },
-  { text: "LinkedIn", icon: "FaLinkedinIn", href: "https://www.linkedin.com/in/khangnd" },
-  { text: "Twitter", icon: "SiTwitter", href: "https://twitter.com/_khangnd" },
-  { text: "Fandom", icon: "SiFandom", href: "https://dev.fandom.com/wiki/User:KhangND" },
+  { text: "Github", icon: "SiGithub", href: "https://github.com/sheeeeeeeeeenn" },
+  { text: "LinkedIn", icon: "FaLinkedinIn", href: "https://www.linkedin.com/in/shenmar-bonifacio-10660b1ba/" },
+  { text: "Vercel", icon: "SiVercel", href: "https://vercel.com/shenmars-projects" }, 
+  
 ];
+
 
 const SocialPanelWithRef = ({}, ref: ForwardedRef<HTMLUListElement>) => {
   const { reduceMotion } = useContext(GlobalContext);

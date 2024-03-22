@@ -1,26 +1,21 @@
 const about = {
-  headline: "A software developer, front-end enthusiast.",
-  intro: `I'm a full-time software developer who has a strong passion for visual
-  and design. I enjoy developing visual-related stuffs, reading random
-  tech blogs and getting inspired by the awesomeness.`,
+  headline: "A future Software Developer and Engineer",
+  intro: `I am currently in college under the degree of Bachelor of Science in Computer Science. 
+  With all the foundations of knowledge and skills I have gained so far in my program, 
+  I am dedicated and motivated to seek for work towards personal and professional growth. .`,
   facts: [
-    "My full name is Khang Nguyen Duy, but I prefer just $1.",
-    "I was born on a wonderful day in 1995.",
-    "I am a citizen of Vietnam, living in its largest city.",
-    "One word to describe my personality: Introversion.",
-    "Two words to describe my capability: Good all-rounder.",
-    "Three words to describe my living goal: Family and friends.",
+    "My full name is Shenmar Bonifacio, but I preferred to be called $1.",
+    "3rd Year College @ St. Clare College of Caloocan.",
+    "One word to describe my personality: Adventurous.",
   ],
   trivias: [
-    "Basketball is my favorite sport.",
-    "I love winter, but only on screen. I can hardly handle the cold in actuality.",
-    "I served the country in a local militia for 2 years.",
-    `There is this video game franchise that has a major impact on my life called
-    Fire Emblem. And I have been serving its $2 as an admin for several years.`,
+    "Playing computer games is my favorite hobby",
+    "I love exploring new things, especially in programming.",
+    ` $2 has been consistently my preferred computer game..`,
   ],
   links: {
-    $1: ["Khang", "https://www.howtopronounce.com/khang"],
-    $2: ["biggest knowledge base", "https://fireemblem.fandom.com/"],
+    $1: ["Shen", "https://www.howtopronounce.com/shén"],
+    $2: ["League Of Legends", "https://www.leagueoflegends.com/en-ph/"],
   },
 };
 

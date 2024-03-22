@@ -11,150 +11,161 @@ type Job = {
 const work: Record<string, Job[]> = {
   Careers: [
     {
-      title: "Unios",
-      timeline: "Jan 2022 - current",
-      description: "An Australia-based company specializing in lighting solutions and manufacturing",
-      remark: "Work in progress...",
-    },
-    {
-      title: "Bosch",
-      timeline: "Aug 2019 - Dec 2021",
-      description: "A multi-national technology company based in Germany, whose major business sector is mobility",
-      remark:
-        "A new fresh start for me after having finished my service for the country. I was able to learn a lot about processes, new techs and best practices, and apply to my daily work. And prominently, I could utilize my English in daily communications and formal meetings.",
-      activities: [
-        "Develop tools on top of the $1 to support an internal business unit",
-        "Follow the Scrum framework's principles to engage in the software development process",
-        "Define, apply and continuously improve the software development process to adapt and overcome challenges",
-        "Actively review and improve individual skills competency over the time",
-        "Tools used: Visual Studio Code, IBM ELM tools, Balsamiq Mockups, MS Office, Skype",
-      ],
-      techs: "HTML, CSS, Sass, JS, jQuery, ReactJS, $2, $3, $4, $5, $6",
+      title: "Social Media Committee",
+      timeline: "2021 - Present",
+      description: "Appointed live streamer for church masses and proficient in crafting graphic designs for posters, tarpaulins, and tickets during events.",
+      remark: "Go to portfolio: $1",
       links: {
-        $1: ["IBM ELM toolsuite", "https://jazz.net/products/elm/"],
-        $2: ["DXL", "https://en.wikipedia.org/wiki/DOORS_Extension_Language"],
-        $3: ["OSLC", "https://open-services.net/"],
-        $4: ["OpenSocial", "https://en.wikipedia.org/wiki/OpenSocial"],
-        $5: ["ag-Grid", "https://www.ag-grid.com/"],
-        $6: ["vis-network", "https://visjs.github.io/vis-network/docs/network/"],
+        $1: ["Designs", "https://sheeeeeeeeeenn.github.io/Shen/Works/index2.html"],
       },
     },
     {
-      title: "Cathay Life",
-      timeline: "Feb 2017 - Apr 2017",
-      description: "A Taiwanese life insurance company",
-      remark:
-        "This is the first company I joined after my graduation. I was able to experience a professional working environment and learned from my seniors.",
-      activities: [
-        "Develop software utilities to support internal users",
-        "Engage in a robust, long-standing system",
-        "Tools used: WebSphere, ClearCase",
-      ],
-      techs: "HTML, Bootstrap, JS, Java, JSP, XML, DB2 JDBC",
+      title: "Academic Commissions",
+      timeline: "2019 - Present - Self- Employed",
+      description: "Excellently handling school activities and projects such as outputs, drawing, video editing, coding, etc.",
+      remark: "Go to portfolio: $1",
+      links: {
+        $1: ["Designs", "https://sheeeeeeeeeenn.github.io/Shen/Works/index2.html"],
+      },
     },
+    {
+      title: "Digital Artist",
+      timeline: "2019 - Present - Self- Employed",
+      description: "Experienced in digital art commissions, specializing in transforming custom portraits and photos into unique own style of digital artworks.",
+      remark: "Go to portfolio: $1",
+      links: {
+        $1: ["Digital Arts", "https://sheeeeeeeeeenn.github.io/Shen/Works/index2.html"],
+      },
+    },
+
   ],
-  "Side Works": [
+  "Applications": [
     {
-      title: "Fandom",
-      timeline: "2016 - 2018",
-      description:
-        "A company providing wiki hosting and domain service for users and offering content created by users",
-      remark:
-        "Fandom (formerly Wikia) is the platform that I started as a volunteering helper during my time at college. I was able to engage in my very first international environment, where I could communicate with a lot of people from various countries.",
-      activities: [
-        "Monitor $1's activities",
-        "Provide user support services",
-        "Content translations (blogs, help pages, articles)",
-        "Tools used: Slack, Jira, Crowdin, Google Docs",
-      ],
+      title: "First Website Portfolio",
+      timeline: "2023",
+      description: "My first website portfolio -  2nd Place Best in Portfolio.",
+      remark: "Link: $1",
+      techs: "HTML, CSS, JAVASCRIPT,",
       links: {
-        $1: ["Vietnamese Community Central", "https://community.fandom.com/vi/wiki/Trang_Ch%C3%ADnh"],
+        $1: ["Portfolio", "https://sheeeeeeeeeenn.github.io/Shen/index.html#home"],
+      },
+    }, 
+    {
+      title: "Shen Food App",
+      timeline: "2024",
+      description: "My first semester project in CC106",
+      remark: "Link: $1",
+      techs: "React Native, Supabase",
+      links: {
+        $1:["Github", "https://github.com/sheeeeeeeeeenn/Shen-Food-App"],
+      },
+    }, 
+    {
+      title: "Real-Estate ( Admin Dashboard )",
+      timeline: "Latest",
+      description: "Mini Thesis project in my second semester as a 3rd year. Integrated project ",
+      remark: "Link: $1",
+      techs: "Next.js 14,  App Router, React, Tailwind, Prisma, postgresql, and cockroachDB",
+      links: {
+        $1: ["Vercel", "https://admin-dashboard-indol-sigma.vercel.app"],
+      },
+    }, 
+    {
+      title: "Real-Estate ( Client Dashboard )",
+      timeline: "Latest",
+      description: "Mini Thesis project in my second semester as a 3rd year. Integrated project ",
+      remark: "Link: $1",
+      techs: "Next.js 14,  App Router, React, Tailwind, Prisma, postgresql, and cockroachDB",
+      links: {
+        $1: ["Vercel", "https://client-dashboard-eosin.vercel.app"],
+      },
+    }, 
+
+    {
+      title: "Word Per Minute Game",
+      timeline: "Typing Speed · 2022 · Desktop · Mobile",
+      description: "Number of words processed per minute, most commonly used to measure and denote the speed of typing or reading speed.",
+      remark: "Link: $1",
+      techs: "HTML, CSS, JS",
+      links: {
+        $1: ["Word Per Minute", "https://sheeeeeeeeeenn.github.io/Shen/Works/Typing%20Test%20By%20ShenPogi/index.html"],
       },
     },
     {
-      title: "Fandom Developers",
-      timeline: "2016 - 2021",
-      description: "A community of Fandom volunteering developers",
+      title: "A 3D Rubiks-Cube Game!",
+      timeline: "Game · 3D · Solving · 2022 · Desktop",
+      description: "Simple game, easy to navigate enjoy!",
       remark:
-        "This is more or less my first code playground when I started to love front-end development. As a part of this community, I could learn and collaborate with the others to improve my coding skill. My favorite works: $2, $3.",
-      activities: [
-        "Develop extensions on top of the $1 platform (the core of every Fandom wiki)",
-        "Cross-review, improve existing scripts",
-        "Tool used: Fandom's code editor",
-      ],
-      techs: "HTML, CSS, JS, jQuery, $4",
+         "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["MediaWiki", "https://www.mediawiki.org/wiki/MediaWiki"],
-        $2: ["ArticleRating", "https://dev.fandom.com/wiki/ArticleRating"],
-        $3: ["FloatingToc", "https://dev.fandom.com/wiki/FloatingToc"],
-        $4: ["MediaWiki API", "https://doc.wikimedia.org/mediawiki-core/master/js/#!/api/mw.Api"],
+        $1: ["Rubiks Game", "https://sheeeeeeeeeenn.github.io/Shen/Works/Rubik's%20Cube%20Game%20By%20ShenPogi/index.html"],
       },
     },
     {
-      title: "Win7 Simu",
-      timeline: "2019 - present",
-      description: "A simulator of Windows 7 on mobile",
+      title: "2048",
+      timeline: "Math · Numbers · Interactive · Single-Player · 2022 · Desktop · Mobile",
+      description: "Single-player sliding block puzzle game.",
       remark:
-        "This is the biggest side project that I have started with a lot of time and effort invested. At first, it was simply made for me to apply things I have learned, something I would have fun building, but apparently it has some unforeseen potential, as it is surprisingly well-received and gets a lot of positive feedback and encouragement to advance it further. Visit its $1.",
-      activities: [
-        "Simulate the functionalities and features of Windows 7 through web technologies",
-        "Integrate with Android's JS Interface, build and deploy to app store",
-        "Actively engage in user's experience and collect feedback",
-        "Tools used: Visual Studio Code, Android Studio, Crowdin",
-      ],
-      techs: "HTML, Sass, JS, VueJS, Vuex, Vue-i18n, axios, Firebase, FabricJS, Java",
+        "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["App page", "https://play.google.com/store/apps/details?id=com.visnalize.win7simu"],
+        $1: ["2048", "https://sheeeeeeeeeenn.github.io/Shen/Works/2048%20Game%20by%20ShenPogi/index.html"],
       },
     },
     {
-      title: "Winport",
-      timeline: "2020/2022",
-      description: "A window-styled, multi-theming portfolio",
+      title: "Memory Test",
+      timeline: "Test · Interactive · Learning · 2023 · Desktop · Mobile",
+      description: "Test your short term memory skills with this free memory game.",
       remark:
-        "This very site you are viewing is my first website portfolio. The core design is inspired by Microsoft's Windows, with icons provided by $1 and $2. I built the $4 in 2020 out of fun and to practice a little bit into React's basic concepts. After 2 years, I came back to it and rewrote the whole thing from scratch using the same tech stacks as in my current job demand. It was a great experience building the $5 and realized how my skills had improved over the time. Feel free to check out the source code I made publicly available on $3, and do not hesitate to put a star if you like it.",
-      techs: ["v1 - HTML, Sass, JS, ReactJS, React Router", "v2 - NextJS, TypeScript, Framer Motion, Theme UI"],
+        "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["Freepik", "https://www.freepik.com/"],
-        $2: ["React Icons", "https://react-icons.github.io/react-icons"],
-        $3: ["Github", "https://github.com/khang-nd/khang-nd.github.io"],
-        $4: ["first version", "https://khang-nd.github.io"],
-        $5: ["second version", "https://khang-nd.vercel.app"],
+        $1: ["Memory Test", "https://sheeeeeeeeeenn.github.io/Shen/Works/Memory%20Cards%20Game%20By%20ShenPogi/index.html"],
       },
     },
     {
-      title: "Lucky Draw",
-      timeline: "2020",
-      description: "A simple web tool for organizing lucky drawing events",
+      title: "Speech Text Reader App",
+      timeline: "Interactive · Text Reader · 2022 · Desktop",
+      description: "A technology that converts text into spoken audio. It can read aloud PDFs, websites, and books using natural AI voices.",
       remark:
-        "A side project in collaboration with my colleague, this tool was built to support a customer in organizing his special event. You can visit it $1.",
-      techs: "HTML, Bootstrap, ReactJS, React-i18n",
+        "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["here", "https://quayso.com.vn/"],
+        $1: ["Speech Text Reader App", "https://sheeeeeeeeeenn.github.io/Shen/Works/Speech%20Text%20Reader%20By%20ShenPogi/index.html"],
       },
     },
     {
-      title: "Fandom Utils",
-      timeline: "2020",
-      description: "Useful Fandom utilities all together",
+      title: "Drawing App",
+      timeline: "Interactive · Design · Sketch · 2023 · Desktop · Mobile",
+      description: "Help you create simple images called vector graphics.",
       remark:
-        "My first browser extension built to bring together all the utilities developed by me and fellow developers at the $1. The project is open-sourced, feel free to check out the source code on $2.",
-      techs: "HTML, CSS, JS, Svelte, Web Extension Polyfill",
+        "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["Fandom Dev Wiki", "https://dev.fandom.com/"],
-        $2: ["Github", "https://github.com/khang-nd/fandom-utils"],
+        $1: ["Drawing App", "https://sheeeeeeeeeenn.github.io/Shen/Works/Memory%20Cards%20Game%20By%20ShenPogi/index.html"],
       },
     },
     {
-      title: "7.css",
-      timeline: "2020",
-      description: "A tiny CSS framework to recreate the Windows 7 UI",
+      title: "Exchange Rate App",
+      timeline: "Money · Exchange · Real Time · 2023 · Desktop · Mobile",
+      description: "Rate at which one currency will be exchanged for another currency.",
       remark:
-        "My first published Node package where people can download and use in their projects. Check it out $1. You can read more about the progress and what I learned from developing it in $2.",
-      techs: "HTML, SCSS, JS, EJS, PostCSS",
+        "Link: $1",
+      techs: "HTML, CSS, JS",
       links: {
-        $1: ["here", "https://khang-nd.github.io/7.css"],
-        $2: ["my blog", "https://dev.to/khangnd/7-css-my-case-study-50d1"],
+        $1: ["Exchange Rate App", "https://sheeeeeeeeeenn.github.io/Shen/Works/Exchange%20Rate%20Calculator%20By%20ShenPogi/index.html"],
+      },
+    },
+    {
+      title: "Catching Insects Game",
+      timeline: "Game · Insects · Catching · 2023 · Desktop",
+      description: "All you have to do is catch the insect on the screen.",
+      remark:
+        "Link: $1",
+      techs: "HTML, CSS, JS",
+      links: {
+        $1: ["Catching Insects Game", "https://sheeeeeeeeeenn.github.io/Shen/Works/Insect%20Catch%20Game%20by%20ShenPogi/index.html"],
       },
     },
   ],
