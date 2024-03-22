@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    // Custom rules here
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": [
+          "sx"
+        ]
+      }
+    ]
+  }
 }
