@@ -1,47 +1,48 @@
-// pages/blog.tsx
-import { GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
-import { Flex } from 'theme-ui';
-import { getTechnologyArticles } from '../services/newsapi'; // Adjust import path as needed
-import { NewsArticle, BlogPlatform } from '../services/_type'; // Adjust import path as needed
-import Window from '../src/components/molecules/Window';
-import ContentPane from '../src/components/pages/blog/ContentPane';
-import NavigationPane from '../src/components/pages/blog/NavigationPane';
-import Layout from '../src/components/pages/Layout';
+import { GetStaticProps } from "next";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { Flex } from "theme-ui";
+import { getArticles as getDevtoArticles } from "../services/devto";
+import { getArticles as getVibloArticles } from "../services/viblo";
+import { BlogPlatform, DevArticle, VibloArticle } from "../services/_type";
+import Window from "../src/components/molecules/Window";
+import ContentPane from "../src/components/pages/blog/ContentPane";
+import NavigationPane from "../src/components/pages/blog/NavigationPane";
+import Layout from "../src/components/pages/Layout";
+import { getRoute } from "../src/misc/routes";
 
 type PageProps = {
-  technologyArticles: NewsArticle[];
+  devtoArticles: DevArticle[];
+  vibloArticles: VibloArticle[];
   lastUpdated?: string;
 };
 
 export const getStaticProps: GetStaticProps<PageProps> = async () => {
-  const technologyArticles = await getTechnologyArticles();
+  const [devtoArticles, vibloArticles] = await Promise.all([getDevtoArticles(), getVibloArticles()]);
+
   return {
-    revalidate: 604800, // Example: revalidate once a week
+    revalidate: 604800,
     props: {
-      technologyArticles,
-      lastUpdated: new Date().toLocaleDateString(),
+      vibloArticles,
+      devtoArticles,
+      lastUpdated: new Date().toLocaleDateString(), // this prop shall update per revalidation time met
     },
   };
 };
 
-export default function Blog({ technologyArticles, lastUpdated }: PageProps) {
-  const router = useRouter();
-  // Use a query parameter to determine the active platform
-  const activePlatform = router.query.platform || BlogPlatform.Technology;
+export default function Blog({ devtoArticles, vibloArticles, lastUpdated }: PageProps): JSX.Element {
+  const { asPath } = useRouter();
+  const [activePlatform, setActivePlatform] = useState<BlogPlatform>(BlogPlatform.Devto);
 
   return (
-    <Window title="Technology News">
+    <Window title={getRoute(asPath)?.title}>
       <Flex sx={{ flexDirection: ["column", null, "row"] }}>
         <NavigationPane
-          activePlatform={activePlatform as BlogPlatform}
+          activePlatform={activePlatform}
           lastUpdated={lastUpdated}
-          onNavigate={(platform) => router.push(`/?platform=${platform}`, undefined, { shallow: true })}
+          onNavigate={(p) => setActivePlatform(p)}
         />
-        <ContentPane
-          activePlatform={activePlatform as BlogPlatform}
-          articles={{ [BlogPlatform.Technology]: technologyArticles }}
-        />
+        <ContentPane activePlatform={activePlatform} articles={{ "Dev.to": devtoArticles, Viblo: vibloArticles }} />
       </Flex>
     </Window>
   );
